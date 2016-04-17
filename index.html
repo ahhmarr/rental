@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>     <html class="no-js ie8 ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if gte IE 9 ]> <html class="no-js ie9 ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>kingdom of rentals</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expires" content="never" />
+    <meta name="content-language" content="EN" />
+    
+    <meta name="ROBOTS" content="NOYDIR" />
+    <meta name="ROBOTS" content="NOODP" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="referrer" content="unsafe-url" />
+    
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0">
+    <link href="resources/style/odhr.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="resources/style/home.css" media="all">
+    <!--[if IE]>
+<link rel="stylesheet" href="resources/style/ie.css" media="all">
+<![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon-precomposed" href="//csvcus.homeaway.com/rsrcs/B6/12AB71B7CD51550CBE2C52616E7549-apple-touch-icon-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//csvcus.homeaway.com/rsrcs/CB/29BCF21CFD9AB7F5014E7697D3FCC5-apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//csvcus.homeaway.com/rsrcs/B3/4356FC5B032DDB63E646E375899E49-apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//csvcus.homeaway.com/rsrcs/3A/5511B73BF9649B2B76F7F9281BE2EC-apple-touch-icon-144x144-precomposed.png" />
+    <script>
+    var ha = ha || {};
+    ha.strings = {
+        bothDatesRequiredMessage: 'When providing travel dates, both arrival and departure dates are required.',
+        clearstay: {
+            error: {
+                nochildren: 'Please enter a number of children.',
+                validchildren: 'Please enter a valid number of children.',
+                nostartdate: 'Please input a start date.',
+                validstartdate: 'Please input a valid start date.',
+                noenddate: 'Please input an end date.',
+                validenddate: 'Please input a valid end date.',
+                startdateinfuture: 'Please enter a start date that is in the future.',
+                startbeforeend: 'Please enter a start date that is before the end date.',
+                noadults: 'Please enter a number of adults.',
+                validadults: 'Please enter a valid number of adults.',
+                zeroadults: 'Please enter a number of adults greater than zero.',
+                maxtravelers: 'The total number of travelers entered exceeds this unit\'s maximum capacity of',
+                nounit: 'Unit does not exist',
+                nopets: 'Unfortunately this unit does not allow pets.',
+                toobigdates: 'The date range you have specified is too large. Please reduce to an amount less than 763 days.',
+                unavailable: 'This unit is not available for the dates you have specified.'
+            }
+        },
+        favorites: {
+            checklist: {
+                main: 'Favourites',
+                newFavorite: '+ Create New List',
+                viewAllFavorites: 'View All Favourites',
+                uncheckAll: 'Deselect All',
+                saveText: 'Save',
+                defaultItem: 'My Favourites',
+                invalidEmail: 'Invalid email: ',
+                noEmail: 'No email exists in \\\'To\\\' field'
+            },
+            notes: {
+                hit: {
+                    edit: 'Edit Note',
+                    add: 'Add Note',
+                    save: 'Save Note',
+                    cancel: 'Cancel',
+                    remove: 'x',
+                    addNoteContent: 'Add notes to remember what you thought about this property.'
+                },
+                property: {
+                    edit: 'Edit Note',
+                    add: 'Add Note',
+                    save: 'Save Note',
+                    cancel: 'Cancel',
+                    remove: 'Delete',
+                    addNoteContent: 'Add notes to remember what you thought about this property.'
+                }
+            },
+            nav: {
+                trips: 'Booked',
+                inquired: 'Enquired',
+                favorites: 'Favourites',
+                allFavorites: 'All Favourites'
+            },
+            lists: {
+                defaultInputText: 'Name this favourites list'
+            },
+            listingRow: {
+                available: 'Available!'
+            }
+        },
+        map: {
+            markerTitle: 'Click to see more'
+        },
+        property: {
+            sendToAFriend: {
+                errorTitle: 'Please correct the following entries' + ': \n\n',
+                errorToEmail: 'Enter a valid email address for your friend' + '. '
+            }
+        },
+        quoteForm: {
+            dateFields: {
+                dateFieldLabel: 'Enter dates so we can calculate your total'
+            }
+        },
+        search: {
+            gallery: {
+                empty: 'No photos are available for this listing. Contact the owner for details.'
+            }
+        },
+        searchFilters: {
+            region_refinement: 'region',
+            any: 'Any',
+            edit: 'Edit',
+            apply: 'Apply',
+            errors: {
+                minSleep_numeric: 'Minimum people must be a number',
+                maxSleep_numeric: 'Maximum people must be a number',
+                minBedrooms_numeric: 'Minimum bedrooms must be a number',
+                maxBedrooms_numeric: 'Maximum bedrooms must be a number',
+                minPrice_numeric: 'Minimum price must be a number',
+                maxPrice_numeric: 'Maximum price must be a number',
+                minBathrooms_numeric: 'Minimum bathrooms must be a number',
+                maxBathrooms_numeric: 'Maximum bathrooms must be a number',
+                minSleeps_lt_maxSleeps: 'Minimum no. of people must not not exceed maximum no. of people',
+                minBedrooms_lt_maxBedrooms: 'Minimum bedroom count may not exceed maximum bedroom count',
+                minPrice_lt_maxPrice: 'Minimum price must be smaller than maximum price',
+                minBathrooms_lt_maxBathrooms: 'Minimum bathroom count may not exceed maximum bathroom count'
+            }
+        }
+    };
+    </script>
+    <script type="text/javascript">
+    var fb = {
+        "authId": "1577121892567610"
+    };
+    </script>
+    <script>
+    var traveler_labels = [];
+    </script>
+    <script type="text/javascript">
+    var translation_visited = 'Viewed';
+    var translation_inquired = 'Enquired';
+    </script>
+    <script type="text/javascript">
+    var CMSFunctions = []
+    </script>
+    <link rel="alternate" href="ios-app://642441300/homeaway//" />
+    <link rel="alternate" href="android-app://com.vacationrentals.homeaway/homeaway//" />
+    <meta name="referrer" content="origin">
+    <script type="text/javascript">
+    var analyticsdatalayer = {
+        "pagetype": "home",
+        "appenvironment": "production",
+        "appversion": "1.0-2016_04_14-SNAPSHOT",
+        "sensitive": "false",
+        "releasedate": "20160414",
+        "proctor": "abv:2,ade:0,adu:1",
+        "branch": "2016_04_14",
+        "monikerbrand": "odhr",
+        "revision": "c3b9b4e8",
+        "lbenable": "1",
+        "appname": "ownersdirect-co-uk-a",
+        "analyticsbrand": "odhr",
+        "visitortype": "traveler",
+        "actuation": "ownersdirect_co_uk",
+        "brand": "odhr",
+        "pagename": "home page",
+        "pageflow": "-1",
+        "conversion": "false"
+    };
+    var edapOptions = {
+        skipPageview: true,
+        skipOptimizely: false
+    };
+    </script>
+    <script type="text/javascript">
+    var analyticsdatalayer = analyticsdatalayer || {};
+    analyticsdatalayer.optimizely = "218803213";
+    </script>
+    <script>
+    var heroTotal = 0;
+    </script>
+    <script type="text/javascript">
+    window.NREUM || (NREUM = {}), __nr_require = function(e, t, n) {
+        function r(n) {
+            if (!t[n]) {
+                var o = t[n] = {
+                    exports: {}
+                };
+                e[n][0].call(o.exports, function(t) {
+                    var o = e[n][1][t];
+                    return r(o || t)
+                }, o, o.exports)
+            }
+            return t[n].exports
+        }
+        if ("function" == typeof __nr_require) return __nr_require;
+        for (var o = 0; o < n.length; o++) r(n[o]);
+        return r
+    }({
+        1: [function(e, t, n) {
+            function r(e, t) {
+                return function() {
+                    o(e, [(new Date).getTime()].concat(a(arguments)), null, t)
+                }
+            }
+            var o = e("handle"),
+                i = e(2),
+                a = e(3);
+            "undefined" == typeof window.newrelic && (newrelic = NREUM);
+            var u = ["setPageViewName", "addPageAction", "setCustomAttribute", "finished", "addToTrace", "inlineHit"],
+                c = ["addPageAction"],
+                f = "api-";
+            i(u, function(e, t) {
+                newrelic[t] = r(f + t, "api")
+            }), i(c, function(e, t) {
+                newrelic[t] = r(f + t)
+            }), t.exports = newrelic, newrelic.noticeError = function(e) {
+                "string" == typeof e && (e = new Error(e)), o("err", [e, (new Date).getTime()])
+            }
+        }, {}],
+        2: [function(e, t, n) {
+            function r(e, t) {
+                var n = [],
+                    r = "",
+                    i = 0;
+                for (r in e) o.call(e, r) && (n[i] = t(r, e[r]), i += 1);
+                return n
+            }
+            var o = Object.prototype.hasOwnProperty;
+            t.exports = r
+        }, {}],
+        3: [function(e, t, n) {
+            function r(e, t, n) {
+                t || (t = 0), "undefined" == typeof n && (n = e ? e.length : 0);
+                for (var r = -1, o = n - t || 0, i = Array(0 > o ? 0 : o); ++r < o;) i[r] = e[t + r];
+                return i
+            }
+            t.exports = r
+        }, {}],
+        ee: [function(e, t, n) {
+            function r() {}
+
+            function o(e) {
+                function t(e) {
+                    return e && e instanceof r ? e : e ? u(e, a, i) : i()
+                }
+
+                function n(n, r, o) {
+                    e && e(n, r, o);
+                    for (var i = t(o), a = l(n), u = a.length, c = 0; u > c; c++) a[c].apply(i, r);
+                    var s = f[g[n]];
+                    return s && s.push([m, n, r, i]), i
+                }
+
+                function p(e, t) {
+                    w[e] = l(e).concat(t)
+                }
+
+                function l(e) {
+                    return w[e] || []
+                }
+
+                function d(e) {
+                    return s[e] = s[e] || o(n)
+                }
+
+                function v(e, t) {
+                    c(e, function(e, n) {
+                        t = t || "feature", g[n] = t, t in f || (f[t] = [])
+                    })
+                }
+                var w = {},
+                    g = {},
+                    m = {
+                        on: p,
+                        emit: n,
+                        get: d,
+                        listeners: l,
+                        context: t,
+                        buffer: v
+                    };
+                return m
+            }
+
+            function i() {
+                return new r
+            }
+            var a = "nr@context",
+                u = e("gos"),
+                c = e(2),
+                f = {},
+                s = {},
+                p = t.exports = o();
+            p.backlog = f
+        }, {}],
+        gos: [function(e, t, n) {
+            function r(e, t, n) {
+                if (o.call(e, t)) return e[t];
+                var r = n();
+                if (Object.defineProperty && Object.keys) try {
+                    return Object.defineProperty(e, t, {
+                        value: r,
+                        writable: !0,
+                        enumerable: !1
+                    }), r
+                } catch (i) {}
+                return e[t] = r, r
+            }
+            var o = Object.prototype.hasOwnProperty;
+            t.exports = r
+        }, {}],
+        handle: [function(e, t, n) {
+            function r(e, t, n, r) {
+                o.buffer([e], r), o.emit(e, t, n)
+            }
+            var o = e("ee").get("handle");
+            t.exports = r, r.ee = o
+        }, {}],
+        id: [function(e, t, n) {
+            function r(e) {
+                var t = typeof e;
+                return !e || "object" !== t && "function" !== t ? -1 : e === window ? 0 : a(e, i, function() {
+                    return o++
+                })
+            }
+            var o = 1,
+                i = "nr@id",
+                a = e("gos");
+            t.exports = r
+        }, {}],
+        loader: [function(e, t, n) {
+            function r() {
+                if (!w++) {
+                    var e = v.info = NREUM.info,
+                        t = s.getElementsByTagName("script")[0];
+                    if (e && e.licenseKey && e.applicationID && t) {
+                        c(l, function(t, n) {
+                            e[t] || (e[t] = n)
+                        });
+                        var n = "https" === p.split(":")[0] || e.sslForHttp;
+                        v.proto = n ? "https://" : "http://", u("mark", ["onload", a()], null, "api");
+                        var r = s.createElement("script");
+                        r.src = v.proto + e.agent, t.parentNode.insertBefore(r, t)
+                    }
+                }
+            }
+
+            function o() {
+                "complete" === s.readyState && i()
+            }
+
+            function i() {
+                u("mark", ["domContent", a()], null, "api")
+            }
+
+            function a() {
+                return (new Date).getTime()
+            }
+            var u = e("handle"),
+                c = e(2),
+                f = window,
+                s = f.document;
+            NREUM.o = {
+                ST: setTimeout,
+                CT: clearTimeout,
+                XHR: f.XMLHttpRequest,
+                REQ: f.Request,
+                EV: f.Event,
+                PR: f.Promise,
+                MO: f.MutationObserver
+            }, e(1);
+            var p = "" + location,
+                l = {
+                    beacon: "bam.nr-data.net",
+                    errorBeacon: "bam.nr-data.net",
+                    agent: "js-agent.newrelic.com/nr-918.min.js"
+                },
+                d = window.XMLHttpRequest && XMLHttpRequest.prototype && XMLHttpRequest.prototype.addEventListener && !/CriOS/.test(navigator.userAgent),
+                v = t.exports = {
+                    offset: a(),
+                    origin: p,
+                    features: {},
+                    xhrWrappable: d
+                };
+            s.addEventListener ? (s.addEventListener("DOMContentLoaded", i, !1), f.addEventListener("load", r, !1)) : (s.attachEvent("onreadystatechange", o), f.attachEvent("onload", r)), u("mark", ["firstbyte", a()], null, "api");
+            var w = 0
+        }, {}]
+    }, {}, ["loader"]);
+    </script>
+</head>
+
+<body class="homePage home-responsive odhr odhr hd">
+    <div class="body-inner js-bodyInner js-scrollBarOffset">
+        <div id="header">
+            <div class="js-mastheadView masthead-header">
+                <div class="header-bce">
+                    <div class="container">
+                        <div class="navbar header navbar-bce">
+                            <div class="navbar-inner">
+                                <div class="pull-left">
+                                    <a class="btn-header-collapse" data-toggle="slidemenu" data-target=".slide-menu-bce">
+                                        <i class="icon-hamburger-menu" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://www.ownersdirect.co.uk/" title='OwnersDirect.co.uk' class="">
+                                        <img src="resources/images/logo.png" />
+                                    </a>
+                                </div>
+                                <div class="visible-tablet visible-sm-block pull-right">
+                                    <div class="header-bce-links header-bce-links-sm">
+                                        <a href="" class="btn btn-lg btn-large btn-lyp se-lyp" style="background-color: :#ff9900">List your property</a>
+                                    </div>
+                                </div>
+                                <div class="header-bce-links navbar-collapse nav-collapse slide slide-menu-bce">
+                                    <ul class="nav navbar-nav" role="navigation">
+                                        <li class="slide-nav-header visible-xs-block visible-sm-block hidden-desktop">
+                                            <strong>Hello there!</strong>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown visible-md visible-lg visible-desktop">
+                                            <a href="#" id="login-drop" role="button" class="dropdown-toggle" data-toggle="dropdown">Login <span class="caret" aria-hidden="true"></span></a>
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="login-drop">
+                                                <li class="sub-nav-back visible-xs-block visible-sm-block hidden-desktop">
+                                                    <a href="#" class="">
+                                                        <i class="icon-chevron-left" aria-hidden="true"></i> <strong></strong>
+                                                    </a>
+                                                </li>
+                                                <li class="divider visible-xs-block visible-sm-block hidden-desktop"></li>
+                                                <li class="se-traveler-login">
+                                                    <a href="">
+        Traveller Login
+    </a>
+                                                </li>
+                                                <li class="se-owner-login">
+                                                    <a href="">
+        Owner Login
+    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="se-traveler-login visible-xs-block visible-sm-block hidden-desktop">
+                                            <a href="https://cas.homeaway.com/auth/traveler/login?service=https%3A%2F%2Fwww.ownersdirect.co.uk%2Fuser%2Fsso%2Fauth%3Flt%3Dtraveler%26context%3Ddef%26service%3D%252F&amp;kmsi=true">
+                                        Traveller Login
+                                    </a>
+                                        </li>
+                                        <li class="se-owner-login visible-xs-block visible-sm-block hidden-desktop">
+                                            <a href="https://www.ownersdirect.co.uk/haod">
+                                        Owner Login
+                                    </a>
+                                        </li>
+                                        <li class="dropdown ">
+                                            <a href="#" id="help-drop" role="button" class="dropdown-toggle" data-toggle="dropdown">Help <span class="caret" aria-hidden="true"></span></a>
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="help-drop">
+                                                <li class="sub-nav-back visible-xs-block visible-sm-block hidden-desktop">
+                                                    <a href="#" class="">
+                                                        <i class="icon-chevron-left" aria-hidden="true"></i> <strong>Back</strong>
+                                                    </a>
+                                                </li>
+                                                <li class="divider visible-xs-block visible-sm-block hidden-desktop"></li>
+                                                <li>
+                                                    <a href="http://help.ownersdirect.co.uk">
+        Visit Help Centre
+    </a>
+                                                </li>
+                                                <li class="divider">
+                                                </li>
+                                                <li class="nav-header">
+                                                    Holidaymakers
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.ownersdirect.co.uk/info/about-us/why-rent-direct?icid=IL___t_text_howitworks_home_page_link">
+        How it works
+    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.ownersdirect.co.uk/info/ideas">
+        Travel guides
+    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.ownersdirect.co.uk/search/refined/world/region:1/Other:special+offers?icid=IL___t_text_specialoffers_home_page_link">
+        Special offers
+    </a>
+                                                </li>
+                                                <li class="divider">
+                                                </li>
+                                                <li class="nav-header">
+                                                    Homeowners
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.ownersdirect.co.uk/info/lyp?icid=IL___O_Text___home_page_link">
+        Advertise with us
+    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.ownersdirect.co.uk/info/owner-resources">
+        Getting started
+    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.ownersdirect.co.uk/info/tipsandtools">
+        Tips &amp; Tools
+    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="visible-xs-block visible-sm-block hidden-desktop">
+                                            <a href="" class="se-lyp">List your property</a>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="btn btn-lg btn-large btn-lyp pull-left visible-md visible-lg visible-desktop se-lyp btn-warning" style="background-color: #ff9900;color:#fff">List your property</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-bce-birdhouse-container birdhouse-toggle">
+                            <div class="flip-container dropdown-toggle" data-toggle="dropdown">
+                                <div class="flipper">
+                                    <div class="birdhouse-tagline back">
+                                        <div>
+                                            Let's Stay
+                                            <br />Together
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-bce-about fade">
+                                <p>OwnersDirect.co.uk is part of the HomeAway family, the world leader in holiday home rentals with over 1 million listings. We offer the largest selection of properties for any travel occasion and every budget. We're committed to helping families and friends find a perfect holiday home rental to create unforgettable travel experiences together.</p>
+                                <div><a href="https://www.ownersdirect.co.uk/info/about-us/about-the-family">Learn More</a></div>
+                                <div class="text-right bce-about-logo-wrapper">
+                                    <img src="//csvcus.homeaway.com/rsrcs/cdn-logos/1.5.1/bce/brand/homeaway/logo-simple.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-background-image">
+            <div class="intro-banner visible-md visible-lg"></div>
+            <div class="container intro">
+                <div class="row intro-top">
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 search-box search-form">
+                        <h1 class="search-header">Search over many villas, cottages and apartments</h1>
+                        <form name="searchForm" action="/searchForm" method="get" enctype="application/x-www-form-urlencoded">
+                            <div class="row-margin">
+                                <input type="text" name="keywords" id="searchKeywords" placeholder="Search by destination or property ID" class="keywords input col-sm-12 col-md-12 col-lg-12 js-searchField form-control" autocomplete="off" />
+                            </div>
+                            <div class="input-datepicker search-calendars">
+                                <div class="input-datepicker col-xs-12 col-sm-6 col-md-6 col-lg-6 home-start-datepicker">
+                                    <input class="col-sm-12 col-md-12 col-lg-12 start-calendar search-calendar form-control" id="startDateInput" type="text" size="10" name="startDateInput" placeholder="Arrive" />
+                                    <i class="icon-calendar icon-gray"></i>
+                                </div>
+                                <div class="input-datepicker col-xs-12 col-sm-6 col-md-6 col-lg-6 home-end-datepicker">
+                                    <input class="col-sm-12 col-md-12 col-lg-12 end-calendar search-calendar form-control" id="endDateInput" type="text" size="10" name="endDateInput" placeholder="Depart" />
+                                    <i class="icon-calendar icon-gray"></i>
+                                </div>
+                            </div>
+                            <div class="row row-margin">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <select name="sleepsInput" id="nbPersonsInput" class="input-persons select is-select-empty js-sleepsSelect form-control">
+                                        <option value="" selected>Number of Guests</option>
+                                        <option value="Sleeps:2">2+</option>
+                                        <option value="Sleeps:4">4+</option>
+                                        <option value="Sleeps:6">6+</option>
+                                        <option value="Sleeps:8">8+</option>
+                                        <option value="Sleeps:10">10+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row row-margin">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <button id="keyword-submit" class="col-sm-12 col-xs-12 search-submit-button btn btn-primary btn-lg js-searchSubmit" type="button" style="background-color: #ff9900;color:#fff">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="floating-header hidden-xs col-sm-7 col-md-7 col-lg-7">
+                        <div class="header-small"></div>
+                        <div class="header-big"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container-marketing home-page-section">
+            <div class="container-benefits is-absolute-lg js-benefits">
+                <div class="container">
+                    <section class="benefits hidden-xs">
+                        <ul class="list-inline benefits-list text-center">
+                            <li>
+                                <h3>Search over many properties</h3>
+                                <div class="benefit-blurb visible-md visible-lg">in popular destinations</div>
+                            </li>
+                            <li class="traveler-fees">
+                                <h3>Book direct</h3>
+                                <div class="benefit-blurb visible-md visible-lg">with the owner or property manager</div>
+                            </li>
+                            <li>
+                                <h3>Enjoy your holiday</h3>
+                                <div class="benefit-blurb visible-md visible-lg">with family and friends</div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="inspiration">
+            <div class="container">
+                <h2 class="h2"></h2>
+                <div class="js-carousel themes carousel slide ha-carousel">
+                    <ol class="carousel-indicators ha-indicators list-inline text-center center-block">
+                        <li data-target=".js-carousel" data-slide-to="0" class="active ha-indicator">Favourites</li>
+                        
+                        <li data-target=".js-carousel" data-slide-to="2" class=" ha-indicator">Other Holidays</li>
+                    </ol>
+                    <div class="carousel-inner theme-blocks">
+                        <div class="active item item-ha">
+                            <div class="row">
+                                <a href="" class="col-sm-4 tile-1 tile" style="background-image: url('http://www.homzcart.com/admin/resources/project/img/201508311441020015.jpg')">
+                                    <span class="theme-pic-note full-width">
+                            <span class="main-text">Villa for your needs</span>
+                                    <br />
+                                    <span class="sub-text hidden-xs">View Villas <i class="icon-chevron-right"></i></span>
+                                    </span>
+                                </a>
+                                <div class="col-sm-offset-1 col-sm-7 col-sm-offset-correct">
+                                    <div class="row">
+                                        <a href="" class="col-sm-12 col-md-12 col-lg-12 tile-2 tile" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/770x200/od-hp-majorca-villa1.jpg')">
+                                            <span class="theme-pic-note flush-right">
+                                    <span class="main-text">Search Villas with pools in Majorca</span>
+                                            <br />
+                                            <span class="sub-text hidden-xs">Search Villas <i class="icon-chevron-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="/info/trust-and-security/travellers-home?icid=IL_homemerch_favourites_securitycentre" class="col-sm-5 tile-3 tile col-sm-first" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/375x230/od-hp-security_375x230.jpg')">
+                                            <span class="theme-pic-note flush-left">
+                                    <span class="main-text">Stay secure: Visit our Security Centre</span>
+                                            <br />
+                                            <span class="sub-text hidden-xs">View Security Centre <i class="icon-chevron-right"></i></span>
+                                            </span>
+                                        </a>
+                                        <a href="/search/refined/world/region:1/Other:special+offers?icid=IL_homemerch_favourites_specialoffers" class="col-sm-5 col-sm-offset-2 tile-4 tile col-sm-second" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/375x230/od-hp-offers_375x230.jpg')">
+                                            <span class="theme-pic-note flush-right">
+                                    <span class="main-text">Find yourself a special deal</span>
+                                            <br />
+                                            <span class="sub-text hidden-xs">View Deals <i class="icon-chevron-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" item item-ha">
+                            <div class="row">
+                                <a href="/rentals/spain/majorca-mallorca/r223?icid=IL_homemerch_sunholiday_mallorca" class="col-sm-4 tile-1 tile" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/370x450/od-hp-majorca.jpg')">
+                                    <span class="theme-pic-note full-width">
+                            <span class="main-text">Mallorca</span>
+                                    <br />
+                                    <span class="sub-text hidden-xs">View Mallorca <i class="icon-chevron-right"></i></span>
+                                    </span>
+                                </a>
+                                <div class="col-sm-offset-1 col-sm-7 col-sm-offset-correct">
+                                    <div class="row">
+                                        <a href="/rentals/portugal/algarve/r146?icid=IL_homemerch_sunholiday_algarve" class="col-sm-12 col-md-12 col-lg-12 tile-2 tile" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/770x200/od-hp-algarve.jpg')">
+                                            <span class="theme-pic-note flush-right">
+                                    <span class="main-text">Algarve</span>
+                                            <br />
+                                            <span class="sub-text hidden-xs">Visit Algarve <i class="icon-chevron-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="/rentals/greece/r33?icid=IL_homemerch_sunholiday_greece" class="col-sm-5 tile-3 tile col-sm-first" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/375x230/od-hp-greece_375x230.jpg')">
+                                            <span class="theme-pic-note flush-left">
+                                    <span class="main-text">Greece</span>
+                                            <br />
+                                            <span class="sub-text hidden-xs">Explore Greece <i class="icon-chevron-right"></i></span>
+                                            </span>
+                                        </a>
+                                        <a href="/search/world/region:1/keywords:french+riviera?icid=IL_homemerch_sunholiday_frenchriviera" class="col-sm-5 col-sm-offset-2 tile-4 tile col-sm-second" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/375x230/od-hp-french-riviera_375x230.jpg')">
+                                            <span class="theme-pic-note flush-right">
+                                    <span class="main-text">French Riviera</span>
+                                            <br />
+                                            <span class="sub-text hidden-xs">See the Riviera <i class="icon-chevron-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" item item-ha">
+                            <div class="row">
+                                <a href="/rentals/united-kingdom/cornwall/r184?icid=IL_homemerch_ukholiday_cornwall" class="col-sm-4 tile-1 tile" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/370x450/od-hp-cornwall.jpg')">
+                                    <span class="theme-pic-note full-width">
+                            <span class="main-text">Cornwall</span>
+                                    <br />
+                                    <span class="sub-text hidden-xs">View Cornwall Rentals <i class="icon-chevron-right"></i></span>
+                                    </span>
+                                </a>
+                                <div class="col-sm-offset-1 col-sm-7 col-sm-offset-correct">
+                                    <div class="row">
+                                        <a href="/rentals/united-kingdom/devon/r83?icid=IL_homemerch_ukholiday_devon" class="col-sm-12 col-md-12 col-lg-12 tile-2 tile" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/770x200/od-hp-devon_770x200.jpg')">
+                                            <span class="theme-pic-note flush-right">
+                                    <span class="main-text">Devon</span>
+                                            <br />
+                                            <span class="sub-text hidden-xs">Visit Devon <i class="icon-chevron-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="/rentals/united-kingdom/dorset/r476?icid=IL_homemerch_ukholiday_dorset" class="col-sm-5 tile-3 tile col-sm-first" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/375x230/od-hp-dorset_375x230.jpg')">
+                                            <span class="theme-pic-note flush-left">
+                                    <span class="main-text">Dorset</span>
+                                            <br />
+                                            <span class="sub-text hidden-xs">Visit Dorset <i class="icon-chevron-right"></i></span>
+                                            </span>
+                                        </a>
+                                        <a href="/search/world/region:1/keywords:sussex?icid=IL_homemerch_ukholiday_sussex" class="col-sm-5 col-sm-offset-2 tile-4 tile col-sm-second" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/375x230/od-hp-sussex_375x230.jpg')">
+                                            <span class="theme-pic-note flush-right">
+                                    <span class="main-text">Sussex</span>
+                                            <br />
+                                            <span class="sub-text hidden-xs">Explore Sussex <i class="icon-chevron-right"></i></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular-destinations hidden-xs">
+            <div class="container">
+                <h2 class="h2">Popular Destinations</h2>
+                <section class="popular-destinations">
+                    <div>
+                        <div class="tile-with-price first-row-tablet">
+                            <div class="image js-lazyLoadImage" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/linkpile/uk-holidays_570x250.jpg')">
+                                <span class="price-bubble">
+            <div class="price-bubble-text">
+                from £57/pn
+            </div>
+        </span>
+                                <span class="title tile-with-price-text">
+            UK Holidays
+        </span>
+                            </div>
+                            <div class="tile-with-price-links">
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/united-kingdom/england/r29">
+                    England
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/united-kingdom/wales/r71">
+                    Wales
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/united-kingdom/scotland/r55">
+                    Scotland
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/united-kingdom/cumbria-lake-district-national-park/r471">
+                    Lake District
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/united-kingdom/cornwall/r184">
+                    Cornwall
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/united-kingdom/somerset/r286">
+                    Somerset
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/united-kingdom/devon/r83">
+                    Devon
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/united-kingdom/dorset/r476">
+                    Dorset
+                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile-with-price first-row-tablet">
+                            <div class="image js-lazyLoadImage" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/linkpile/puerto-vallarta.jpg')">
+                                <span class="price-bubble">
+            <div class="price-bubble-text">
+                from £65/pn
+            </div>
+        </span>
+                                <span class="title tile-with-price-text">
+            Family Favourites
+        </span>
+                            </div>
+                            <div class="tile-with-price-links">
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/spain/r58">
+                    Spain
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/spain/majorca-mallorca/r223">
+                    Majorca
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/switzerland/r62">
+                    Switzerland
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/spain/minorca-menorca/r228">
+                    Menorca
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/canary-islands/r729">
+                    Canary Islands
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/portugal/r53">
+                    Portugal
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/france/r31">
+                    France
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/italy/r39">
+                    Italy
+                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile-with-price ">
+                            <div class="image js-lazyLoadImage" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/linkpile/villa-holidays_570x250.jpg')">
+                                <span class="price-bubble">
+            <div class="price-bubble-text">
+                from £65/pn
+            </div>
+        </span>
+                                <span class="title tile-with-price-text">
+            Villa Holidays
+        </span>
+                            </div>
+                            <div class="tile-with-price-links">
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/turkey/r66">
+                    Turkey
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/cyprus/r27">
+                    Cyprus
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/greece/r33">
+                    Greece
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/croatia/r1015">
+                    Croatia
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/malta/r43">
+                    Malta
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/montenegro/r1108">
+                    Montenegro
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/spain/ibiza/r116">
+                    Ibiza
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/italy/tuscany/r308">
+                    Tuscany
+                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile-with-price ">
+                            <div class="image js-lazyLoadImage" style="background-image: url('https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/linkpile/seasonal_570x250.jpg')">
+                                <span class="price-bubble">
+            <div class="price-bubble-text">
+                from £28/pn
+            </div>
+        </span>
+                                <span class="title tile-with-price-text">
+            Seasonal Breaks
+        </span>
+                            </div>
+                            <div class="tile-with-price-links">
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/thailand/r63">
+                    Thailand
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/india/r686">
+                    India
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/south-africa/r56">
+                    South Africa
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/caribbean/r4">
+                    Caribbean
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/cape-verde/r1292">
+                    Cape Verde
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/usa/r1734">
+                    USA
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/ireland/r37">
+                    Ireland
+                </a>
+                                </div>
+                                <div class="tile-with-price-text">
+                                    <a href="/rentals/spain/balearic-islands/r337">
+                    Balearic Islands
+                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="security-insurance-container">
+            <div class="container">
+            </div>
+        </div>
+        <div class="container container-marketing">
+            <div class="testimonials home-page-section hidden-xs">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <h2 class="h2">Listing Your Property</h2>
+                        <div class="testimonial-content">
+                            <img src="https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/HP_Image_Renting_Your_Home.png" class="testimonial-image"></img>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <div class="vertical-links">
+                                    <ol>
+                                        <li>
+                                            Choose the advertising option that works best for you: subscription fee or pay-per-booking</li>
+                                        <li>
+                                            Set up payments to make it easy for travelers to book securely online using their debit or credit card</li>
+                                        <li>
+                                            Create your listing to showcase all your property has to offer</li>
+                                    </ol>
+                                </div>
+                                <p>
+                                    <a href="" title="List your property">List your property</a></p>
+                                <p>
+                                    <a href="" title="Not ready to rent?">Not ready to rent yet?</a></p>
+                            </div>
+                        </div>
+                        <p>
+                            &nbsp;</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <h2 class="h2">Booking a Property</h2>
+                        <div class="testimonial-content">
+                            <img src="https://resources.ownersdirect.co.uk/resources/a8c20941/cms-images/files/shared/themes/Homepage/HP_Image_Finding_Booking_A_Property.png" class="testimonial-image"></img>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <div class="vertical-links">
+                                    <ol>
+                                        <li>
+                                            Search using your destinations and dates</li>
+                                        <li>
+                                            Look for the <strong>Book Now</strong> option or click <strong>Enquire Now</strong> and your request will be sent directly to the owner or the owner&rsquo;s property manager.</li>
+                                        <li>
+                                            Pay with your credit or debit card if the owner accepts Online Payments. &nbsp;If not, before sending any payment, you should always call the telephone number on the listing and speak with the owner or property manager to confirm your booking and payment details.</li>
+                                    </ol>
+                                </div>
+                                <p>
+                                    <a href="/search" title="search">Search properties</a></p>
+                                <p>
+                                    <a href="/info/trust-and-security?icid=IL___t_text_howitworks_finding_booking_property" title="traveler resources">How it works</a></p>
+                            </div>
+                        </div>
+                        <p>
+                            &nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-advert" class="hidden-xs js-footerAdWrapper ">
+            <div class="ha-dfp-ads" id="btm-ad-banner"></div>
+            <span class="ad-lable">Advertisement</span><a href='/info/about-us/media-sales' class="ad-with-us">Advertise here</a>
+        </div>
+        <div class="footer-linkpile js-bceFooterWrapper">
+            
+        </div>
+        
+        
+        
+        <script src="//csvcus.homeaway.com/rsrcs/6D/A8BE361B9EE26C5E721E76C6D4AFCE-require.js"></script>
+        <script>
+        (function() {
+            window.haPageData = window.haPageData || {};
+            window.haPageData.loginCallbackContext = '' || '';
+            window.analyticsdatalayer = window.analyticsdatalayer || {};
+            <!-- Temporarily here until /td/th/favorites has been enabled for all brands in TravelerHome, TRAVHOME-618  -->
+            window.favoritesUrlPath = '' || '/favorites';
+            define('coreApiFeatures', [], {
+                'travelerFeeEnabled': false
+            });
+            define('pageData', [], {});
+            require.config({
+                paths: {
+                    'edap-integrations': '//csvcus.homeaway.com/rsrcs/edap-integrations/2.6.0/javascripts/edap-integrations.min'
+                },
+                map: {
+                    '*': {
+                        'datepicker': 'jqueryUI'
+                    }
+                },
+                'waitSeconds': 0
+            });
+            define('appConfig', [],
+                /*
+                 * Only the rubicon:asset tag seems to know how to find the .min.js fine on the CDN
+                 */
+                {
+                    'initialRoute': 'homeODHR',
+                    'moduleUrl': '//csvcus.homeaway.com/rsrcs/E3/24BD21361A0819E610B835C02F17F6-homeODHR.js'
+                }
+            );
+            require(['//csvcus.homeaway.com/rsrcs/C4/724E7BE06EAC501808C2AA7BD82300-main.min.js'], function() {});
+        })();
+        </script>
+        <script>
+        window.ha || (window.ha = {});
+        window.ha.timestampDocumentLoaded = new Date().getTime();
+        </script>
+        <script>
+        for (var i = 0; i < CMSFunctions.length; i++) {
+            CMSFunctions[i].call();
+        }
+        if (ha && ha.util && ha.util.datepicker) {
+            ha.util.datepicker.init();
+        }
+        </script>
+        <span id="thirdPartyTags"></span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+.ui-datepicker .full-reserve a:before,.ui-datepicker .full-reserve-hover a:before{border-color:#ccc!important;opacity:1}
+.ui-datepicker .am-reserve a:before,.ui-datepicker .am-reserve-hover a:before{border-left:30px solid #ccc!important;opacity:1}
+.ui-datepicker .pm-reserve a:after,.ui-datepicker .pm-reserve-hover a:after{border-right:30px solid #ccc!important;opacity:1}
+.ui-datepicker .ui-datepicker-calendar td.full-reserve a,.ui-datepicker .ui-datepicker-calendar td.am-reserve.pm-reserve a{color:#666}
+.ui-datepicker .full-selected a:before,.ui-datepicker .full-selected-hover a:before,.ui-datepicker .full-selected a:after,.ui-datepicker .full-selected-hover a:after{border-color:#ff7f19;opacity:1}
+.calendar-legend .blocked-key{background-color:#ccc!important;opacity:1}
+.ie8 .header-bce .logo .svg-logo{display:none}
+.ie8 .search-form .input-group-addon{position:relative}
